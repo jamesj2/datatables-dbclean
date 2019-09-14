@@ -24,6 +24,3 @@ Route::namespace('Datatable')
         Route::post('uploadmany', 'UploadManyController');
         Route::resource('example', 'ExampleController');
     });
-Route::get('json',function() {
-    return response()->json(['name' => 'Virat Gandhi', 'state' => 'Gujarat']);
-});
