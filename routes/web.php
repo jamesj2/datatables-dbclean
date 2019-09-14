@@ -18,9 +18,8 @@ Route::get('/', function () {
 
 Route::namespace('Datatable')
     ->prefix('datatable')
-    ->name('examples.')
+    ->name('datatable.')
     ->group(function () {
         Route::get('uploadmany', 'UploadManyController');
         Route::post('uploadmany', 'UploadManyController');
-        Route::resource('example', 'ExampleController');
     });
